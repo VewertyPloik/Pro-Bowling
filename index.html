@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pro Bowling</title>
+    <title>Pro Bowling: Career Edition</title>
     <style>
         :root { --gold: #ffd700; --blue: #00eaff; --bg: #050505; --red: #ff3333; }
         body {
@@ -128,7 +128,7 @@
     
     <div id="home-screen" class="overlay">
         <h1>Pro Bowling</h1>
-        <div style="font-size:14px; color:#666; margin-bottom:30px;">Made By Vewerty Ploik</div>
+        <div style="font-size:14px; color:#666; margin-bottom:30px;">CAREER EDITION</div>
         <div class="btn-row">
             <button class="btn btn-blue" onclick="startGame(true)">Play</button>
             <button class="btn" onclick="openStats()">Stats</button>
@@ -183,10 +183,10 @@
 
         <div id="message">STRIKE!</div>
         <div id="achieve-pop">
-            <div style="font-size: 24px;">🏆</div>
+            <div style="font-size: 12px;">.</div>
             <div>
-                <div style="font-size: 10px; color: var(--gold); font-weight: bold;"></div>
-                <div style="font-size: 14px; font-weight: bold;" id="pop-ach-name"></div>
+                <div style="font-size: 1px; color: var(--gold); font-weight: bold;">.</div>
+                <div style="font-size: 1px; font-weight: bold;" id="pop-ach-name">.</div>
             </div>
         </div>
 
@@ -254,7 +254,7 @@
     }
     function showAch(title) {
         const el = document.getElementById('achieve-pop');
-        document.getElementById('pop-ach-name').innerText =;
+        document.getElementById('pop-ach-name').innerText = title;
         el.classList.add('show-ach');
         setTimeout(()=>el.classList.remove('show-ach'), 3000);
     }
