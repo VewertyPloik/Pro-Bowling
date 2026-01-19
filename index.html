@@ -185,8 +185,8 @@
         <div id="achieve-pop">
             <div style="font-size: 24px;">🏆</div>
             <div>
-                <div style="font-size: 10px; color: var(--gold); font-weight: bold;">UNLOCKED</div>
-                <div style="font-size: 14px; font-weight: bold;" id="pop-ach-name">Title</div>
+                <div style="font-size: 10px; color: var(--gold); font-weight: bold;"></div>
+                <div style="font-size: 14px; font-weight: bold;" id="pop-ach-name"></div>
             </div>
         </div>
 
@@ -254,7 +254,7 @@
     }
     function showAch(title) {
         const el = document.getElementById('achieve-pop');
-        document.getElementById('pop-ach-name').innerText = title;
+        document.getElementById('pop-ach-name').innerText =;
         el.classList.add('show-ach');
         setTimeout(()=>el.classList.remove('show-ach'), 3000);
     }
